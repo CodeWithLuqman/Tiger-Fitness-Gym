@@ -457,72 +457,78 @@ html {
     align-items: center;
   }
 }
-
-        /* About Section */
-        .about-section {
-  background-color: #111;
-  color: #fff;
-  padding: 60px 20px;
-}
-
-.about-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 40px;
-  align-items: center;
-  justify-content: center;
-}
-
-.about-image img {
-  max-width: 500px;
-  border-radius: 12px;
-  width: 100%;
-}
-
-.about-content {
-  max-width: 600px;
-}
-
-.about-content h2 {
-  font-size: 2.5rem;
-  margin-bottom: 20px;
-}
-
-.about-content h2 span {
-  color: #2fffb2;
-}
-
-.about-content p {
-  margin-bottom: 20px;
-  line-height: 1.6;
-}
-.about-stats {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 30px;
-  margin-top: 30px;
-}
-
-.stat h3 {
-  font-size: 2rem;
-  color: #2fffb2;
-}
-
-.stat p {
-  font-size: 1rem;
-  color: #ccc;
-}
-
-@media (max-width: 768px) {
-  .about-container {
+/* About Section */
+.about-video-section {
+    padding: 50px 20px;
+    background-color: #111;
+    display: flex;
     flex-direction: column;
+    align-items: center;
+  }
+
+  .about-video-container {
+    max-width: 800px;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0, 255, 200, 0.2);
+    margin-bottom: 30px;
+  }
+
+  .about-video-container video {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 12px;
+  }
+
+  .about-content-container {
+    max-width: 800px;
+    width: 100%;
+  }
+
+  .about-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #fff;
+  }
+
+  .about-content h2 span {
+    color: #2fffb2;
+  }
+
+  .about-content p {
+    color: #ccc;
+    margin-bottom: 20px;
+    line-height: 1.6;
   }
 
   .about-stats {
-    grid-template-columns: 1fr;
-    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    margin-top: 30px;
+    max-width: 800px;
+    width: 100%;
   }
-}
+
+  .stat h3 {
+    font-size: 2rem;
+    color: #2fffb2;
+  }
+
+  .stat p {
+    font-size: 1rem;
+    color: #ccc;
+  }
+
+  @media (max-width: 768px) {
+    .about-stats {
+      grid-template-columns: 1fr;
+      text-align: center;
+    }
+  }
+
 
 
 
