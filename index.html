@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tiger Fitness Gym</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo">Tiger<span>Fitness</span></a>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services"onclick="scrollToSection(event, 'services')">Services</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#testimonials">Review</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Welcome to Tiger <br><span>Fitness Gym</span></h1>
+                <h2><span id="typed-words"></span></h2>
+                <h2 class="auto-type"></h2>
+                <p>Join Tiger Fitness Gym and start your journey to a healthier, stronger you with our expert trainers and state-of-the-art facilities.</p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn">Join Now</a>
+                    <a href="#classes" class="btn btn-outline">Our Classes</a>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- About Section -->
+    <section class="about-section" id="about">
+  <div class="about-container">
+    <div class="about-image">
+      <img src="about image.jpg" alt="Gym Image" />
+    </div>
+    <div class="about-content">
+      <h2>About <span>Us</span></h2>
+      <p>
+        Tiger Fitness Gym was founded in 2010 with a mission to help people transform their lives through fitness. Our state-of-the-art facility and expert trainers provide the perfect environment for you to achieve your goals.
+      </p>
+      <p>
+        We believe fitness should be accessible to everyone, which is why we offer a variety of programs for all fitness levels and ages.
+      </p>
+
+      <!-- About Section Container -->
+<div class="about-stats">
+        <div class="stat">
+          <h3><span class="counter" data-target="12">0</span>+</h3>
+          <p>Years Experience</p>
+        </div>
+        <div class="stat">
+          <h3><span class="counter" data-target="500">0</span>+</h3>
+          <p>Happy Members</p>
+        </div>
+        <div class="stat">
+          <h3><span class="counter" data-target="20">0</span>+</h3>
+          <p>Expert Trainers</p>
+        </div>
+        <div class="stat">
+          <h3><span class="counter" data-target="50">0</span>+</h3>
+          <p>Classes Weekly</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+    <!-- Services Section -->
+    <section class="services-section" id="services">
+  <center><h1 class="section-title ">Our <span>Services</span></h1></center>
+  <div class="services-container">
+    
+    <!-- Card 1 -->
+    <div class="service-card">
+      <img src="services img 1.png" alt="Physical Fitness">
+      <h2>Physical Fitness</h2>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="service-card">
+      <img src="services img 2.png" alt="Weight Gain">
+      <h2>Weight Gain</h2>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="service-card">
+      <img src="services img 3.png" alt="Strength Training">
+      <h2>Strength Training</h2>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="service-card">
+      <img src="services img 4.png" alt="Cardio Training">
+      <h2>Cardio Training</h2>
+    </div>
+
+    <!-- Card 5 -->
+    <div class="service-card">
+      <img src="services img 5.png" alt="Bodybuilding">
+      <h2>Fat Lose</h2>
+    </div>
+
+    <!-- Card 6 -->
+    <div class="service-card">
+      <img src="services img 6.png" alt="Weight Lifting">
+      <h2>Weight Lifting</h2>
+    </div>
+
+  </div>
+</section>
+<!-- Opening Hours Section -->
+<section class="hours-section">
+  <div class="hours-container">
+
+    <!-- 🔲 Single Stylish Box with Heading + Cards -->
+    <div class="timing-box-wrapper">
+      <h2>Opening <span>Hours</span></h2>
+      <p class="hours-note">We are open all week to keep you on track with your fitness journey.</p>
+
+      <div class="timing-grid">
+        <!-- CO. Timing Card -->
+        <div class="timing-card">
+          <h3><i class="fas fa-dumbbell"></i> CO. Timing</h3>
+          <p>6:00 AM – 9:00 AM</p>
+          <p>5:00 PM – 12:00 AM</p>
+        </div>
+
+        <!-- Ladies Timing Card -->
+        <div class="timing-card">
+          <h3><i class="fas fa-female"></i> Ladies Timing</h3>
+          <p>10:00 AM – 4:00 PM</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- 🔽 Full Weekly Schedule -->
+    <!-- <div class="hours-table">
+      <div class="day-row" data-day="Monday">
+        <i class="fas fa-clock"></i><span>Monday</span><span>6:00 AM – 10:00 PM</span>
+      </div>
+      <div class="day-row" data-day="Tuesday">
+        <i class="fas fa-clock"></i><span>Tuesday</span><span>6:00 AM – 10:00 PM</span>
+      </div>
+      <div class="day-row" data-day="Wednesday">
+        <i class="fas fa-clock"></i><span>Wednesday</span><span>6:00 AM – 10:00 PM</span>
+      </div>
+      <div class="day-row" data-day="Thursday">
+        <i class="fas fa-clock"></i><span>Thursday</span><span>6:00 AM – 10:00 PM</span>
+      </div>
+      <div class="day-row" data-day="Friday">
+        <i class="fas fa-clock"></i><span>Friday</span><span>6:00 AM – 10:00 PM</span>
+      </div>
+      <div class="day-row" data-day="Saturday">
+        <i class="fas fa-clock"></i><span>Saturday</span><span>8:00 AM – 8:00 PM</span>
+      </div>
+      <div class="day-row" data-day="Sunday">
+        <i class="fas fa-clock"></i><span>Sunday</span><span>Closed</span>
+      </div>
+    </div> -->
+
+  </div>
+</section>
+
+<!-- pricing section -->
+<section class="pricing-section fade-in" id="pricing">
+    <h1 class="section-title">Our <span>Plans</span></h1>
+    <div class="plans-container">
+      <!-- BASIC -->
+      <div class="plan-card">
+        <h2>BASIC</h2>
+        <p class="price">1000/</p>
+        <ul class="features">
+          <li>Admission Fee</li>
+          <li>At home workouts</li>
+          <li>Smart workout plan</li>
+        </ul>
+        <a href="#contact" class="join-btn">Join Now <i class="fas fa-arrow-right"></i></a>
+      </div>
+
+      <!-- PRO -->
+      <div class="plan-card">
+        <h2>PRO</h2>
+        <p class="price">2000<span>/Month</span></p>
+        <ul class="features">
+          <li>Pro GYMS</li>
+          <li>Smart workout plan</li>
+          <li>At home workouts</li>
+        </ul>
+        <a href="#contact" class="join-btn">Join Now <i class="fas fa-arrow-right"></i></a>
+      </div>
+
+      <!-- PREMIUM -->
+      <div class="plan-card">
+        <h2>PREMIUM</h2>
+        <p class="price">7000<span>/Month</span></p>
+        <ul class="features">
+          <li>Personal Training Fee</li>
+          <li>ELITE Gyms & Classes</li>
+          <li>Smart workout plan</li>
+        </ul>
+       <a href="#contact" class="join-btn">Join Now <i class="fas fa-arrow-right"></i></a>
+      </div>
+    </div>
+  </section>
+
+    
+    <!-- Classes Section -->
+    <section id="classes" class="classes">
+        <div class="container">
+            <h2 class="section-title">Our Classes</h2>
+            <div class="classes-grid">
+                <div class="class-card">
+                    <div class="class-image">
+                        <img src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" loading="lazy" alt="....">
+                    </div>
+                    <div class="class-content">
+                        <h3>Crossfit</h3>
+                        <p>High-intensity functional movement program that will push your limits and build strength.</p>
+                        <div class="class-meta">
+                            <span><i class="far fa-clock"></i> 60 min</span>
+                            <span><i class="fas fa-user"></i> Advanced</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="class-card">
+                    <div class="class-image">
+                        <img src="https://images.unsplash.com/photo-1545205597-3d9d02c29597?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" loading="lazy" alt="....">
+                    </div>
+                    <div class="class-content">
+                        <h3>Yoga</h3>
+                        <p>Improve flexibility, balance and mental clarity with our relaxing yoga sessions.</p>
+                        <div class="class-meta">
+                            <span><i class="far fa-clock"></i> 45 min</span>
+                            <span><i class="fas fa-user"></i> All Levels</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="class-card">
+                    <div class="class-image">
+                        <img src="boxing img.png" loading="lazy" alt=".....">
+                    </div>
+                    <div class="class-content">
+                        <h3>Boxing</h3>
+                        <p>Learn boxing techniques while getting an incredible full-body workout and stress relief.</p>
+                        <div class="class-meta">
+                            <span><i class="far fa-clock"></i> 50 min</span>
+                            <span><i class="fas fa-user"></i> Intermediate</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <h2 class="section-title">Our Gallery</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1538805060514-97d9cc17730c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" loading="lazy" alt="....">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" loading="lazy" alt="....." >
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" loading="lazy" alt=".....">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1552674605-db6ffd4facb5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" loading="lazy" alt=".....">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <h2 class="section-title">Client Reviews</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"Joining Tiger Fitness was the best decision I ever made. The trainers are knowledgeable and supportive, and I've seen incredible results in just 3 months!"</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-image">
+                            <img src="https://randomuser.me/api/portraits/women/32.jpg" loading="lazy" alt="....">
+                        </div>
+                        <div class="author-info">
+                            <h4>Sarah Johnson</h4>
+                            <p>Member since 2021</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"The community at Tiger Fitness is amazing. I look forward to my workouts because of the friendly atmosphere and challenging classes."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-image">
+                            <img src="https://randomuser.me/api/portraits/men/45.jpg" loading="lazy" alt="....">
+                        </div>
+                        <div class="author-info">
+                            <h4>Michael Chen</h4>
+                            <p>Member since 2020</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"After trying several gyms, I finally found my home at Tiger Fitness. The equipment is top-notch and the trainers really care about your progress."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-image">
+                            <img src="https://randomuser.me/api/portraits/women/68.jpg" loading="lazy" alt="....">
+                        </div>
+                        <div class="author-info">
+                            <h4>Lisa Rodriguez</h4>
+                            <p>Member since 2022</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Contact Us</h2>
+            <div class="contact-info">
+                <h3>Address</h3>
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span> Chowk, near Shahdara Metro Bus Station, Shahdara Town, Shahdara</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>0348 4305831</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>info@tigerfitness.com</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <span>Mon-Fri: 6am - 10pm | Sat-Sun: 8am - 8pm</span>
+                    </div>
+                </div>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/shair.agha.326457/"target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/p/CEOkLV_HraK/?utm_source=ig_web_copy_link" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.tiktok.com/@shair_agha234?is_from_webapp=1&sender_device=pc"target="_blank"><i class="fab fa-tiktok"></i></a>
+                    <a href="https://youtube.com/@shairagha604?si=vberKOsNsDPMXCrZ "target="_blank"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="contact-form">
+                <h2>Send Us a Message</h2>
+                <br>
+                <form>
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <input type="text" placeholder="Subject">
+                    <textarea placeholder="Your Message" required></textarea>
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+            </div>
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3397.65825227854!2d74.28784557470073!3d31.615822842421487!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39191d001dd4be1f%3A0x1b860cd3a1e32a2e!2sTiger%20Fitness%20Gym!5e0!3m2!1sen!2s!4v1750682785640!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="social-links">
+                    <a href="https://www.tiktok.com/@shair_agha234?is_from_webapp=1&sender_device=pc"target="_blank"><i class="fab fa-tiktok"></i></a>
+                    <a href="https://www.instagram.com/p/CEOkLV_HraK/?utm_source=ig_web_copy_link" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/shair.agha.326457/"target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://youtube.com/@shairagha604?si=vberKOsNsDPMXCrZ "target="_blank"><i class="fab fa-youtube"></i></a>
+
+                </div>
+                <p class="copyright">&copy; 2025 Tiger Fitness Gym. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+<button id="scrollTopBtn" class="scroll-top">
+  <i class="fas fa-angle-up"></i>
+    <!-- WhatsApp Float -->
+    <a href="https://wa.me/923484305831" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="script.js"></script>
+</body>
+</html>
