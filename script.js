@@ -195,4 +195,26 @@ function scrollToSection(event, id) {
 
     observer.observe(hoursSection);
   });
+// About section scroll-based video play
+document.addEventListener("DOMContentLoaded", function () {
+  const video = document.getElementById('aboutVideo');
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        video.currentTime = 0; // ✅ Start from beginning every time
+        video.play();
+      } else {
+        video.pause(); // Pause when out of view
+      }
+    });
+  }, {
+    threshold: 0.5 // 50% visible
+  });
+
+  observer.observe(video);
+});
+
+
+
 
